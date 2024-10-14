@@ -45,10 +45,10 @@ This C++ code calculates the standard deviation of a dataset using OpenMP for pa
 The code for the following function can be found in sum2.cpp 
 This C++ code computes the sum of a large array (with 10 million elements) in parallel using OpenMP. It divides the workload among multiple threads based on the total number of threads, each thread calculates a partial sum, and the results are combined in a critical section to avoid race conditions. The execution time for the sum computation is also measured and displayed. 
 
-### 10) Vector-Vector Dot product calculation
+### 11) Vector-Vector Dot product calculation
 The code for the following function can be found in vvd.cpp 
 This C++ code calculates the dot product of two arrays using OpenMP for parallelization. It initializes two arrays, A and B, each containing 1000 elements set to 1. The dot product is computed in parallel using a dynamic scheduling strategy, with a chunk size of 100, and the results are combined using a reduction operation. The final result is printed to the console.
 
-### 10) Sum calculation (wrong as pragma barrier is not calculated)
+### 12) Sum calculation (wrong as pragma barrier is not calculated)
 The code for the following function can be found in wrong_sum.cpp 
 This C++ code computes the sum of an array using OpenMP with task-based parallelism. It initializes an array of size 600 with all elements set to 1. The code divides the summation task into segments of size 100, allowing multiple threads to process these segments concurrently. The results from each task are accumulated into a shared variable sum using a critical section to prevent data races.
