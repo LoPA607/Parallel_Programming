@@ -18,4 +18,4 @@ Ensure your pull request adheres to the following guidelines:
 
 By following these guidelines, you help maintain the quality and organization of the project!<br>
                                     
-                                    ***HAPPY LEARNING 😀😀😀***
+***HAPPY LEARNING 😀😀😀***
