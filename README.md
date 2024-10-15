@@ -10,7 +10,7 @@ A list of functions that have been implemented can be found here :-
 >This C++ code implements LU factorization using OpenMP for parallel execution of matrix updates. It optimizes the decomposition by distributing computations for the lower (L) and upper (U) triangular matrices across multiple threads.
 
 ### 2) Maximum element search
->The code for this function can be found in max.cpp, and input for the following can be found in input.cpp
+>The code for this function can be found in [max.cpp](max.cpp), and input for the following can be found in input.cpp
 The code uses OpenMP for parallel programming to find the maximum element in an array. The search is distributed across multiple threads, improving performance by dividing the workload.
 
 ### 3) Matrix Matrix Multiplication
