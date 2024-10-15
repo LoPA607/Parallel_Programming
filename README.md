@@ -76,4 +76,4 @@ This C++ code implements the PageRank algorithm using OpenMP to parallelize the 
 ## 0.4) Motivation
 >There are many more practical situations and algorithm that uses OpenMP and MPI. One can try to use OpenMP to solve complex algorithm using Multithreading and many more concepts of Parallel Programming.<br>
 ### note
->For contribution refer to [Contributing.md](Contributing.md)
+>For contribution refer to [contribution guidelines](Contributing.md)
