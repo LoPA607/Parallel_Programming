@@ -3,7 +3,7 @@
 ## Project Description
 This project demonstrates the use of parallel programming techniques in C++ with OpenMP to efficiently execute computations across multiple threads. It includes examples of parallel loops, task scheduling, and thread synchronization. The goal is to showcase performance improvements in computational tasks using OpenMP directives.
 
-## Functions Implenented
+## 0.1) Functions Implenented
 A list of functions that have been implemented can be found here :-
 
 ### 1) LU Factoristion
@@ -52,3 +52,15 @@ This C++ code calculates the dot product of two arrays using OpenMP for parallel
 ### 12) Sum calculation (wrong as pragma barrier is not calculated)
 >The code for the following function can be found in wrong_sum.cpp 
 This C++ code computes the sum of an array using OpenMP with task-based parallelism. It initializes an array of size 600 with all elements set to 1. The code divides the summation task into segments of size 100, allowing multiple threads to process these segments concurrently. The results from each task are accumulated into a shared variable sum using a critical section to prevent data races.
+
+## 0.2) Compilation
+>
+```shell
+# compile using g++ for Openmp
+g++ - sum2.cpp -o sum2
+./sum2
+
+# compile using g++ for MIP
+mpic++ -fopenmp sum2.cpp -o sum2
+./sum2
+```
