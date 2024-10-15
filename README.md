@@ -28,6 +28,15 @@ The code performs matrix-vector multiplication using OpenMP for parallel process
 ### 6) Finding Page's Rank
 >The code for the following function can be found in page_rank.cpp
 This C++ code implements the PageRank algorithm using OpenMP to parallelize the iterative computation of rank values for each node in a directed graph. The algorithm distributes the workload across multiple threads to compute the PageRank efficiently, with each iteration updating the ranks based on incoming links and the damping factor.
+>The basic idea of PageRank is that if a page has many incoming links (or important links), it is considered more important. The algorithm involves iteratively updating the rank of each page based on the ranks of the pages linking to it.
+'''sheel
+  The formula is: PR(A)=(1−d)+d×∑i=1NPR(Ti)C(Ti)PR(A)=(1−d)+d×∑i=1N​C(Ti​)PR(Ti​)​ Where:
+
+    PR(A)PR(A) is the PageRank of page A.
+    dd is the damping factor (usually set to 0.85).
+    TiTi​ are pages that link to page A.
+    C(Ti)C(Ti​) is the number of outbound links on page TiTi​.
+    '''
 
 ### 7) Product of elements of an array
 >The code for the following function can be found in prod.cpp
