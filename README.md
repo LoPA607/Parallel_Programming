@@ -30,17 +30,13 @@ The code performs matrix-vector multiplication using OpenMP for parallel process
 This C++ code implements the PageRank algorithm using OpenMP to parallelize the iterative computation of rank values for each node in a directed graph. The algorithm distributes the workload across multiple threads to compute the PageRank efficiently, with each iteration updating the ranks based on incoming links and the damping factor.<br>
 >The basic idea of PageRank is that if a page has many incoming links (or important links), it is considered more important. The algorithm involves iteratively updating the rank of each page based on the ranks of the pages linking to it.<br>
 >The formula is:
+>**PR(A) = (1 - d) + d * Σ ( PR(T_i) / C(T_i) )**
+>Where:
 
-\\[
-PR(A) = (1 - d) + d \\times \\sum_{i=1}^N \\frac{PR(T_i)}{C(T_i)}
-\\]
-
-Where:
-
-*   **PR(A)** is the PageRank of page A.
-*   **d** is the damping factor (usually set to 0.85).
-*   **T_i** are pages that link to page A.
-*   **C(T_i)** is the number of outbound links on page \( T_i \).
+>*   **PR(A)** is the PageRank of page A.
+>*   **d** is the damping factor (usually set to 0.85).
+>*   **T_i** are pages that link to page A.
+>*   **C(T_i)** is the number of outbound links on page \( T_i \).
 
 
 
